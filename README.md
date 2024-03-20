@@ -1,0 +1,2 @@
+# cicdPipelineAWS
+Practice CICD pipeline
