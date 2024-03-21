@@ -9,9 +9,9 @@ terraform {
   backend "s3" {
 
     encrypt = true
-    bucket  = "cicd-s3-remotebackend-2024"
+    bucket  = "kmremotebucketbackendkm"
     key     = "backend/tfstate"
-    #dynamodb_table = "tfstate-lock-dynamo"
+    #dynamodb_table = "kmstatelockbackend"
     region = "us-east-1"
 
   }
