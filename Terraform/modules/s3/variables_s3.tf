@@ -1,14 +1,14 @@
 variable "dev_website_bucket_name" {
   type    = string
-  default = "dev-website-hcnorth-5988"
+  default = "dev-website-hcnorth"
 }
 
 variable "artifact_bucket_name" {
   type    = string
-  default = "dev-artifacts-hcnorth-5271"
+  default = "dev-artifacts-hcnorth"
 }
 
 variable "prod_website_bucket_name" {
   type    = string
-  default = "prod-website-hcnorth-2362"
+  default = "prod-website-hcnorth"
 }
