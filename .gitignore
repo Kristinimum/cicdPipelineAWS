@@ -36,3 +36,4 @@ terraform.rc
 # ignore
 CodeBuildServiceRole.txt
 CodePipelineServiceRole.txt
+codestar_connection_credentials.txt
