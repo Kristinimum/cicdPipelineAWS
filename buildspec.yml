@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "Starting pre-build checks..."
+  
+  build:
+    commands:
+      - if grep -q '<title>HealthCare Hospital</title>' ./Terraform/files/index.html; then echo "Website matches expected value."; 
+        else echo "Title check failed-Website title did not match expected value"; exit 1; fi
+
+  post_build:
+    commands:
+      - echo "Post-build phase..."
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: '.'
