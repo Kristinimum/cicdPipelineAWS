@@ -1,5 +1,5 @@
 data "local_file" "codebuild_service_role" {
-  filename = "${path.root}/../../../tf_aws_policies/CodeBuildServiceRole.txt"
+  filename = "${path.root}./tf_aws_policies/CodeBuildServiceRole.txt"
 
 # The file path directs to a local file outside of Terraform where the ARN numbers 
 # for needed resources are stored. This is to prevent having these numbers in 

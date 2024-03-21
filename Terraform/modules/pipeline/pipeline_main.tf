@@ -3,11 +3,11 @@
  version control. */
 
 data "local_file" "codepipeline_service_role" {
-  filename = "${path.root}/../../../tf_aws_policies/CodePipelineServiceRole.txt"
+  filename = "${path.root}./tf_aws_policies/CodePipelineServiceRole.txt"
 }
 
 data "local_file" "codestar_connection_credentials" {
-  filename = "${path.root}/../../../tf_aws_policies/codestar_connection_credentials.txt"
+  filename = "${path.root}./tf_aws_policies/codestar_connection_credentials.txt"
 }
 
 
